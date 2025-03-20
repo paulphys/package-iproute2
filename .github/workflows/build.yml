@@ -5,6 +5,4 @@ on:
     - cron: '0 0 * * *'
 jobs:
   build:
-    uses: gardenlinux/package-build/.github/workflows/build.yml@main
-    with:
-      release: ${{ github.ref == 'refs/heads/main' }}
+    uses: paulphys/package-build/.github/workflows/build.yml@main
